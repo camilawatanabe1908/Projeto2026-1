@@ -229,18 +229,23 @@ body {
 .cards {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 45px;
+    flex-wrap: wrap;
 }
 
-.card {
+.card img{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 300px; 
+    padding: 10px;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 30px;
 }
 
 .botaocg {
-    margin-top: -180px;
-    margin-right: 40px;
+    display: inline-block; 
+    position: relative;
+    top: -60px; 
     padding: 10px 30px;
     background-color: #a10100;
     color: white;
