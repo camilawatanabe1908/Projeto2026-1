@@ -1,79 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Roboto, Arial;
+    font-family: Arial;
 }
-header{
+
+header {
     width: 100%;
     display: inline-block;
     text-align: center;
-    padding: 3px ;
-    nav{
-        a{
+    padding: 3px;
+
+    nav {
+        a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
     }
-    .logo{
-            float: left;
-        }
-        nav{
-            float:right;
-            ul{
-                list-style: none;
-                li{
-                    margin-top: 15px;
-                    display: inline-block;
-                    padding: 30px;
-                    a{
-                        text-transform:uppercase;
-                        font-size: 20px;
-                        color: #a10100;
-                    }
-                    a:hover{
-                        color: #E88213;
-                    }
+
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-top: 15px;
+                display: inline-block;
+                padding: 30px;
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    color: #a10100;
+                }
+
+                a:hover {
+                    color: #E88213;
                 }
             }
-            
-        }     
+        }
+
+    }
 }
+
 .logo img {
-  max-height: 90px; 
-  width: auto;      
-  display: block;  
+    max-height: 90px;
+    width: auto;
+    display: block;
 }
+
 .banner {
     background: #a10100;
     text-align: center;
-    padding: 40px 10px;
+    padding: 40px 0px;
 }
 
 .banner h2 {
     margin-bottom: 30px;
     color: white;
+
+    a:hover {
+        color: #E88213;
+    }
 }
+
 .imagem {
-    width:100%; 
-    margin: 0; 
-    padding: 0;   
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .imagem img {
-    display: block;       
-    width: 100%;         
-    height: auto;         
-    margin: 0;           
-    padding: 0;           
-    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 }
+
 .imagem .botao {
-    position: absolute;   
-    bottom: -37%;         
-    left: 50%;            
-    transform: translateX(-50%); 
+    position: absolute;
+    bottom: -37%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 24px 60px;
     background-color: #a10100;
     color: white;
@@ -86,10 +101,11 @@ header{
 }
 
 .imagem .botao:hover {
-    background-color: #E88213; 
+    background-color: #E88213;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -102,18 +118,17 @@ html, body {
     flex-direction: column;
     gap: 20px;
 }
-    
+
 .texto h2 {
     text-align: center;
     font-size: 25px;
-    width: 100%; /* ocupa tudo */
+    width: 100%;
     color: white;
     margin-bottom: 20px;
     padding: 25px 0;
 
 }
 
-/* lado direito */
 .galeria {
     display: flex;
     gap: 20px;
@@ -121,8 +136,119 @@ html, body {
 }
 
 .galeria img {
-    width: calc(33.33% - 14px); /* ajusta pro gap */
+    width: calc(33.33% - 14px);
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.botaopr {
+    text-decoration: none;
+    color: white;
+
+}
+
+.logocontato img {
+    max-height: 200px;
+    width: auto;
+    display: block;
+    background-color: #a10100;
+}
+
+.topo-vermelho {
+    background: #a10100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logocontato {
+    margin-left: 150px;
+}
+
+.topo-vermelho h1 {
+    color: white;
+    font-size: 40px;
+    margin-right: 120px;
+    text-align: center;
+}
+
+.contato-opcoes {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 40px;
+}
+
+.opcao {
+    text-align: center;
+    max-width: 200px;
+    color: #333;
+}
+
+.opcao p {
+    text-align: center;
+    max-width: 200px;
+    color: #333;
+}
+
+.opcao strong {
+    text-align: center;
+    max-width: 200px;
+    color: black
+}
+
+.opcao i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #a10100;
+}
+
+.opcao h3,
+.opcao p,
+.opcao strong {
+    margin: 5px 0;
+}
+
+.bannercg {
+    background: #a10100;
+    text-align: center;
+    padding: 40px 0px;
+
+    h2 {
+        color: white;
+    }
+}
+
+.imagemcg {
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 1200px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botaocg {
+    margin-top: -180px;
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #a10100;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.botaocg:hover {
+    background-color: #E88213;
 }
