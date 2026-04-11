@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Como Jogar - Capitão Prensadão</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="site/LOGO 2.png">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Como Jogar - Capitão Prensadão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="site/LOGO 2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
     <header>
-            <a href="index.html" title="Home" class="logo">
+        <a href="index.html" title="Home" class="logo">
             <img src="site/LOGO-removebg-preview.png" alt="Capitão Prensadão">
-        </div>
+            </div>
         </a>
-        <nav>
+        <a href="javascript:menu()" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -30,3 +36,82 @@
             </ul>
         </nav>
     </header>
+    <main class="principal">
+        <h2 class="sobre">SOBRE O JOGO</h2>
+        <section class="sobresec">
+            <div class="sobre1">
+                <div class="texto">
+                    <h3>Bem-vindo ao mundo do Prensadão Game!</h3>
+                    <p>Aqui, você controla um herói muito especial: um hot dog aventureiro que enfrenta inimigos como
+                        cebolas, picles e ovos usando seu poderoso molho especial! Ao longo da jornada, o objetivo é
+                        coletar recompensas comestíveis para satisfazer os clientes famintos que aguardam no final de
+                        cada fase.</p>
+                </div>
+                <img src="site/imagemnova.jpg" alt="Jogo">
+            </div>
+
+            <div class="sobre1">
+                <div class="texto">
+                    <h3>Nossa missão</h3>
+                    <p>Percebemos que muitas crianças que visitam nossa dogueria não conseguem aproveitar o espaço kids,
+                        que é destinado aos menores. Pensando nisso, desenvolvemos uma forma diferente de
+                        entretenimento, um jogo digital envolvente, feito especialmente para crianças a partir de 9
+                        anos.</p>
+                </div>
+                <img src="site/menino2.png" alt="Menino">
+            </div>
+
+            <div class="sobre1">
+                <div class="texto">
+                    <h3>Muito além de um jogo</h3>
+                    <p>Mais do que apenas um passatempo, o Prensadão Game é uma extensão da experiência da nossa
+                        dogueria. Enquanto as famílias aproveit am seus momentos, as crianças maiores também podem se
+                        divertir, explorar e se desafiar dentro do nosso universo cheio de sabor e aventura.</p>
+                </div>
+                <img src="site/lanche.jpg" alt="Nosso Lanche">
+            </div>
+
+            <div class="sobre1">
+                <div class="texto">
+                    <h3>Sobre o Prensadão</h3>
+                    <p>O Prensadão é mais do que uma dogueria — é um espaço pensado para toda a família. E agora, também
+                        é o lar de um jogo feito com carinho para garantir que ninguém fique de fora da diversão!</p>
+                </div>
+                <img src="site/espaço.png" alt="Nosso Espaço">
+            </div>
+        </section>
+        <section>
+            <div class="info-jogo">
+                <h1 id="titulo-site"></h1>
+
+                <p><strong>Gênero:</strong> <span id="info-gen"></span></p>
+                <p><strong>Plataforma:</strong> <span id="info-plat"></span></p>
+                <p><strong>Preço:</strong> <span id="info-preco"></span></p>
+                <p><strong>Classificação:</strong> <span id="info-etaria"></span></p>
+            </div>
+            <a href="#" class="botaosobre">JOGUE AGORA</a>
+        </section>
+    </main>
+    <script>
+        const nomeJogo = "Capitão Prensadão";
+        const genJogo = "Plataforma";
+        const platJogo = "Web";
+        const precoJogo = "Gratuito";
+        const classJogo = "7 Anos";
+
+        document.getElementById("titulo-site").innerText = nomeJogo;
+        document.getElementById("info-gen").innerText = genJogo;
+        document.getElementById("info-plat").innerText = platJogo;
+        document.getElementById("info-preco").innerText = precoJogo;
+        document.getElementById("info-etaria").innerText = classJogo;
+    </script>
+    <script src="Arquivo (4)/js/jquery-3.7.1.min.js"></script>
+    <script>
+        function menu() {
+            $("#menu").toggle();
+        }
+    </script>
+<footer class="sobrefooter">
+    <p>Desenvolvido por : Camila Watanabe <i class="fa-solid fa-heart"></i></p>
+</footer>
+</body>

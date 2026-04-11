@@ -112,34 +112,14 @@ body {
     background-color: white;
 }
 
-.conteudo-galeria {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .texto h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     width: 100%;
     color: white;
     margin-bottom: 20px;
     padding: 25px 0;
 
-}
-
-.galeria {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-}
-
-.galeria img {
-    width: calc(33.33% - 14px);
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
 }
 
 .botaopr {
@@ -149,10 +129,19 @@ body {
 }
 
 .logocontato img {
-    max-height: 200px;
-    width: auto;
+    width: 200px;
     display: block;
     background-color: #a10100;
+}
+
+.ovo img {
+    width: 200px;
+    display: block;
+    background-color: #a10100;
+}
+
+.ovo {
+    margin-right: 100px;
 }
 
 .topo-vermelho {
@@ -164,13 +153,13 @@ body {
 }
 
 .logocontato {
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .topo-vermelho h1 {
     color: white;
     font-size: 40px;
-    margin-right: 120px;
+    margin-right: 80x;
     text-align: center;
 }
 
@@ -182,19 +171,19 @@ body {
 
 .opcao {
     text-align: center;
-    max-width: 200px;
+    width: 250px;
     color: #333;
 }
 
 .opcao p {
     text-align: center;
-    max-width: 200px;
+    width: 250px;
     color: #333;
 }
 
 .opcao strong {
     text-align: center;
-    max-width: 200px;
+    width: 250px;
     color: black
 }
 
@@ -213,7 +202,7 @@ body {
 .bannercg {
     background: #a10100;
     text-align: center;
-    padding: 40px 0px;
+    padding: 40px 0 0 0;
 
     h2 {
         color: white;
@@ -223,7 +212,7 @@ body {
 .imagemcg {
     border-radius: 30px;
     margin-top: 30px;
-    width: 1200px;
+    width: 980px;
 }
 
 .cards {
@@ -233,9 +222,9 @@ body {
     flex-wrap: wrap;
 }
 
-.card img{
+.card img {
     display: flex;
-    width: 300px; 
+    width: 280px;
     padding: 10px;
     background: #fff;
     border-radius: 20px;
@@ -243,9 +232,9 @@ body {
 }
 
 .botaocg {
-    display: inline-block; 
+    display: inline-block;
     position: relative;
-    top: -60px; 
+    top: -60px;
     padding: 10px 30px;
     background-color: #a10100;
     color: white;
@@ -256,4 +245,192 @@ body {
 
 .botaocg:hover {
     background-color: #E88213;
+}
+
+footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 0;
+    font-size: 18px;
+    color: black;
+
+}
+
+footer p {
+    margin-top: -6px;
+}
+
+footer i {
+    color: #a10100;
+}
+
+.sobre {
+    color: white;
+    background-color: #a10100;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardsimg {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.cardimg img {
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+main {
+    background-color: #a10100;
+    padding-bottom: 60px;
+}
+
+.sobre1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sobre1 p {
+    text-align: justify;
+    flex: 1;
+    line-height: 1.6;
+}
+
+.sobre1 img {
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.sobresec {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 5px auto;
+    padding: 30px;
+}
+
+.texto h3 {
+    margin-bottom: 8px;
+}
+
+.texto p {
+    margin-top: 0;
+}
+
+.sobre1 {
+    margin-bottom: 30px;
+}
+
+.sobre1 {
+    gap: 40px;
+}
+
+.info-jogo {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 5px auto;
+    padding: 30px;
+    margin-top: 15px;
+}
+
+.botaosobre {
+    display: inline-block;
+    position: relative;
+    top: -60px;
+    padding: 10px 30px;
+    background-color: #a10100;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 800px;
+
+}
+
+.header-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-menu {
+        display: block;
+        float: right;
+        margin: 10px;
+        color: white;
+        border: 1px solid #a10100;
+        font-size: 16px;
+        background-color: #a10100;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    #menu {
+        background-color: white;
+        width: 320px;
+        padding: 10px;
+    }
+
+    #menu a {
+        color: #a10100;
+    }
+
+    .imagem .botao {
+        display: none;
+    }
+    .sobre1 {
+        display: inline-block;
+    }
+
+    .sobresec {
+        max-width: 300px;
+    }
+
+    .imagemcg {
+        display: none;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 15px;
+        margin: auto;
+    }
+    .logocontato{
+        display: none;
+    }
+
+    .topo-vermelho h1{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .contato-opcoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .opcao{
+        padding: 15px;
+    }
+    .ovo img{
+        margin-left: 20px;
+    }
+    .logo img {
+        width: 100%;
+        margin-left: 8px;
+    }
 }

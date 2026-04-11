@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Capitão Prensadão</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="site/LOGO 2.png">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Capitão Prensadão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="site/LOGO 2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body id="conteudo-sensivel">
     <header>
-            <a href="index.html" title="Home" class="logo">
-            <img src="site/LOGO-removebg-preview.png" alt="Capitão Prensadão">
-        </div>
+        <a href="index.html" title="Home" class="logo">
+            <img src="site/LOGO-removebg-preview.png" alt="Capitão Prensadão" title="Capitão Prensadão">
+            </div>
         </a>
-        <nav>
+        <a href="javascript:menu()" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -37,20 +43,52 @@
             <img src="site/Banner 2.png" alt="Banner" title="O Duelo dos Ingredientes">
             <a href="#" class="botao">JOGUE AGORA</a>
         </div>
-            <div class="conteudo-galeria">
-        
+
+        <div class="conteudo-galeria">
             <div class="texto">
-            <h2>Minha Galeria</h2>
+                <h2>Minha Galeria</h2>
             </div>
-              <div class="galeria">
-            <img src="site/imagem 1.jpg" alt="">
-            <img src="site/imagem 2.jpg" alt="">
-            <img src="site/imagem 3.jpg" alt="">
-        </div>    
-        </div>
-    </div>
+            <div class="cardsimg">
+                <div class="cardimg">
+                    <img src="site/imagem 1.jpg" alt="">
+                </div>
 
+                <div class="cardimg">
+                    <img src="site/imagem 2.jpg" alt="">
+                </div>
+
+                <div class="cardimg">
+                    <img src="site/imagem 3.jpg" alt="">
+                </div>
+            </div>
     </section>
+    <script>
+        const ANO_LANCAMENTO = 2026;
+        let anoAtual = new Date().getFullYear();
 
+        if (anoAtual == ANO_LANCAMENTO) {
+            alert("🎮 Novo jogo no ar! Prepare - se para a aventura do Prensadão!");
+        }
+
+        let nomeVisitante = prompt("Bem-vindo ao Prensadão Games! Como posso te chamar?");
+        let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! Nosso jogo é recomendado para maiores de 7 anos.Qual a sua idade?"));
+        if (idadeVisitante >= 7) {
+            alert("Parabéns, " + nomeVisitante + "! Seu acesso foi liberado com sucesso, divirta-se 🍔🔥");
+            document.getElementById("conteudo-sensivel").style.filter = "none";
+        } else {
+            alert(" Desculpe " + nomeVisitante + ", você precisa ter pelo menos 7 anos para acessar aos conteúdos do jogo.");
+            document.getElementById("conteudo-sensivel").style.filter = "blur(20px)";
+        }
+    </script>
+    <script src="Arquivo (4)/js/jquery-3.7.1.min.js"></script>
+    <script>
+        function menu() {
+            $("#menu").toggle();
+        }
+    </script>
+    <footer>
+        <p>Desenvolvido por : Camila Watanabe <i class="fa-solid fa-heart"></i></p>
+    </footer>
 </body>
+
 </html>

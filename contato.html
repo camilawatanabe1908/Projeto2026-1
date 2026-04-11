@@ -14,7 +14,10 @@
             <img src="site/LOGO-removebg-preview.png" alt="Capitão Prensadão">
         </div>
         </a>
-        <nav>
+        <a href="javascript:menu()" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -33,9 +36,12 @@
         </header>
     <section class="topo-vermelho">
     <a href="contato.html" class="logocontato">
-        <img src="site/balão-removebg-preview.png" alt="Capitão Prensadão">
+        <img src="site/ct1.png" alt="Capitão Prensadão">
     </a>
     <h1>Dúvidas ou Sugestões? Entre em contato</h1>
+    <a href="contato.html" class="ovo">
+        <img src="site/ct2.png" alt="Ovo">
+    </a>
     </section>
     <section class="contato-opcoes">
     <div class="opcao">
@@ -49,7 +55,13 @@
     <i class="fa-solid fa-phone-volume"></i>
     <h3>Telefone</h3>
     <p>Ligue</p>
-    <strong>(44)99888-8888</strong>
+    <strong>(44) 99888- 8888</strong>
     </div>
+    <script src="Arquivo (4)/js/jquery-3.7.1.min.js"></script>
     </section>
+        <script>
+        function menu() {
+            $("#menu").toggle();
+        }
+    </script>
     </body>

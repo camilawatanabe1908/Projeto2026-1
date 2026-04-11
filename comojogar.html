@@ -7,15 +7,19 @@
     <title>Como Jogar - Capitão Prensadão</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="site/LOGO 2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body class="bdsobre">
     <header>
         <a href="index.html" title="Home" class="logo">
             <img src="site/LOGO-removebg-preview.png" alt="Capitão Prensadão">
             </div>
         </a>
-        <nav>
+        <a href="javascript:menu()" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -33,10 +37,10 @@
         </nav>
     </header>
     </header>
-    <section class="bannercg">
+    <main class="bannercg">
         <h2>COMO JOGAR</h2>
         <div>
-            <img src="site/banner s.jpg" alt="Banner" title="Como Jogar" class="imagemcg">
+            <img src="site/imagem 3.jpg" alt="Banner" title="Como Jogar" class="imagemcg">
         </div>
         <div class="cards">
             <div class="card">
@@ -52,3 +56,14 @@
                 <a href="#" class="botaocg">JOGUE AGORA</a>
             </div>
         </div>
+    </main>
+    <script src="Arquivo (4)/js/jquery-3.7.1.min.js"></script>
+        <script>
+        function menu() {
+            $("#menu").toggle();
+        }
+    </script>
+<footer>
+    <p>Desenvolvido por : Camila Watanabe <i class="fa-solid fa-heart"></i></p>
+</footer>
+</body>     
