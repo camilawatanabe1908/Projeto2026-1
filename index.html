@@ -12,9 +12,10 @@
 
 <body id="conteudo-sensivel">
     <header>
+        <button id="btn-tema" onclick="alternarTema()">Tema Escuro</button>
+
         <a href="index.html" title="Home" class="logo">
             <img src="site/LOGO-removebg-preview.png" alt="Capitão Prensadão" title="Capitão Prensadão">
-            </div>
         </a>
         <a href="javascript:menu()" class="header-menu">
             <i class="fas fa-bars"></i>
@@ -67,16 +68,16 @@
         let anoAtual = new Date().getFullYear();
 
         if (anoAtual == ANO_LANCAMENTO) {
-            alert("🎮 Novo jogo no ar! Prepare - se para a aventura do Prensadão!");
+            alert("🎮 Novo jogo no ar! Prepare-se para a aventura do Prensadão!");
         }
 
         let nomeVisitante = prompt("Bem-vindo ao Prensadão Games! Como posso te chamar?");
-        let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! Nosso jogo é recomendado para maiores de 7 anos.Qual a sua idade?"));
-        if (idadeVisitante >= 7) {
+        let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! ⚠️ Este jogo é recomendado a partir de 6 anos.Qual a sua idade?"));
+        if (idadeVisitante >= 6) {
             alert("Parabéns, " + nomeVisitante + "! Seu acesso foi liberado com sucesso, divirta-se 🍔🔥");
             document.getElementById("conteudo-sensivel").style.filter = "none";
         } else {
-            alert(" Desculpe " + nomeVisitante + ", você precisa ter pelo menos 7 anos para acessar aos conteúdos do jogo.");
+            alert(" Desculpe " + nomeVisitante + ", você precisa ter pelo menos 6 anos para acessar aos conteúdos do jogo.");
             document.getElementById("conteudo-sensivel").style.filter = "blur(20px)";
         }
     </script>
@@ -84,6 +85,19 @@
     <script>
         function menu() {
             $("#menu").toggle();
+        }
+    </script>
+    <script>
+        function alternarTema() {
+            if (document.body.style.backgroundColor == 'rgb(40, 40, 40)') {
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                document.getElementById('btn-tema').innerText = 'Tema Escuro';
+            } else {
+                document.body.style.backgroundColor = 'rgb(40, 40, 40)';
+                document.body.style.color = 'white';
+                document.getElementById('btn-tema').innerText = 'Tema Claro';
+            }
         }
     </script>
     <footer>

@@ -65,7 +65,7 @@
                 <div class="texto">
                     <h3>Muito além de um jogo</h3>
                     <p>Mais do que apenas um passatempo, o Prensadão Game é uma extensão da experiência da nossa
-                        dogueria. Enquanto as famílias aproveit am seus momentos, as crianças maiores também podem se
+                        dogueria. Enquanto as famílias aproveitam seus momentos, as crianças maiores também podem se
                         divertir, explorar e se desafiar dentro do nosso universo cheio de sabor e aventura.</p>
                 </div>
                 <img src="site/lanche.jpg" alt="Nosso Lanche">
@@ -80,24 +80,26 @@
                 <img src="site/espaço.png" alt="Nosso Espaço">
             </div>
         </section>
-        <section>
-            <div class="info-jogo">
+        <section class="info-jogo">
                 <h1 id="titulo-site"></h1>
-
+            <div class="infos">
                 <p><strong>Gênero:</strong> <span id="info-gen"></span></p>
                 <p><strong>Plataforma:</strong> <span id="info-plat"></span></p>
                 <p><strong>Preço:</strong> <span id="info-preco"></span></p>
                 <p><strong>Classificação:</strong> <span id="info-etaria"></span></p>
             </div>
-            <a href="#" class="botaosobre">JOGUE AGORA</a>
+            <div class="inimigos">
+                <img src="site/inimigos.png" alt="Inimigos" class="inimigos">
+                <a href="#" class="botaosobre">JOGUE AGORA</a>
+            </div>
         </section>
     </main>
     <script>
         const nomeJogo = "Capitão Prensadão";
         const genJogo = "Plataforma";
-        const platJogo = "Web";
+        const platJogo = "Mobile";
         const precoJogo = "Gratuito";
-        const classJogo = "7 Anos";
+        const classJogo = "6 Anos";
 
         document.getElementById("titulo-site").innerText = nomeJogo;
         document.getElementById("info-gen").innerText = genJogo;
@@ -111,7 +113,7 @@
             $("#menu").toggle();
         }
     </script>
-<footer class="sobrefooter">
-    <p>Desenvolvido por : Camila Watanabe <i class="fa-solid fa-heart"></i></p>
-</footer>
+    <footer class="sobrefooter">
+        <p>Desenvolvido por : Camila Watanabe <i class="fa-solid fa-heart"></i></p>
+    </footer>
 </body>
