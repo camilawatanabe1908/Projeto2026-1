@@ -380,6 +380,16 @@ main {
     display: block;
     margin: 20px auto;
 }
+#btn-tema {
+    background-color: #a10100;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+}
+
 
 @media (max-width: 768px) {
     .header-menu {
