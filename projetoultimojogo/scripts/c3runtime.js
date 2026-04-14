@@ -1409,6 +1409,11 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => 0,
 		() => "",
+		() => 6,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
 		() => "correndo",
 		() => "Pulando",
 		() => "Atirando",
@@ -1424,8 +1429,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 0.1,
 		() => 2,
-		() => 132,
-		() => 1025,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (and("", n0.ExpInstVar()) + "/7");
